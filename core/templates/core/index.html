@@ -1,0 +1,17 @@
+
+{% extends "core/base.html" %}
+
+{% block title %}ThriUCare — Home{% endblock %}
+
+{% block content %}
+<section class="container text-center py-5">
+  <h1 class="fw-bold">Welcome to ThriUCare</h1>
+  <p class="lead">
+    A supportive platform for 
+    <span class="text-primary">Childhood</span>, 
+    <span class="text-success">Adulthood</span>, and 
+    <span class="text-warning">Menopause</span>.
+  </p>
+  <a href="{% url 'register' %}" class="btn btn-danger btn-lg mt-3">Start Tracking</a>
+</section>
+{% endblock %}

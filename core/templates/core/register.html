@@ -1,0 +1,31 @@
+
+{% extends "core/base.html" %}
+{% block title %}Register - ThriUCare{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <h2 class="text-center mb-4">Register on ThriUCare</h2>
+    <div class="card shadow p-4 col-md-6 mx-auto">
+        {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+        <form method="post" id="registerForm">
+            {% csrf_token %}
+            <!-- Name & DOB optional fields -->
+            <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input name="name" class="form-control" placeholder="Enter full name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Date of Birth</label>
+                <input type="date" name="dob" class="form-control">
+            </div>
+
+            {{ form.as_p }}
+
+            <button type="submit" class="btn btn-danger w-100">Register</button>
+            <p class="mt-3 text-center">Already have an account? <a href="{% url 'login' %}">Login</a></p>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

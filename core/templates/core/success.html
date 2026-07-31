@@ -1,0 +1,14 @@
+
+{% extends "core/base.html" %}
+{% block title %}Registration Successful{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <div class="card shadow p-4 col-md-6 mx-auto text-center">
+        <h2 class="mb-4 text-success">You have successfully registered!</h2>
+        <p class="mb-4">Click the button below to login to your account.</p>
+        <div class="d-flex justify-content-center">
+            <a href="{% url 'login' %}" class="btn btn-primary w-50">Go to Login</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
