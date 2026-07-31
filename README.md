@@ -50,8 +50,35 @@ thriUCare/
 ├── requirements.txt
 └── README.md
 ```
+## 📸 Screenshots
 
----
+### 🏠 Home Page
+
+![Home Page](screenshots/homepage.png)
+
+### 🔐 Login Page
+
+![Login](screenshots/login.png)
+
+### 📝 Registration Page
+
+![Registration](screenshots/registrationpage.png)
+
+### 🩸 Period Tracker
+
+![Period Tracker](screenshots/periodtracker.png)
+
+### 😴 Sleep Tracking
+
+![Sleep Tracking](screenshots/sleeptracking.png)
+
+### 💊 Medication Tracker
+
+![Medication Tracker](screenshots/medicationtracker.png)
+
+### 🧘 Yoga Tracker
+
+![Yoga Tracker](screenshots/yogatracker.png)
 
 ## ⚙️ Installation
 
